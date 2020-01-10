@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cálculo IMC</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!--Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <!--Calc JS-->
+    <script src="assets/js/calc.js"></script>
+<!--JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+<!--Mascara altura-->
+<script type="text/javascript">
+    $("#altura").mask("0.00");
+  
+    </script>
+
+</head>
+  <body>
+    <div id="topo"><p>
+        Cálculo IMC
+    </p></div>
+    <br>
+        <div class="container-fluid">
+            
+          
+            
+            <div class="row">
+
+                <div class="col-12 col-xl-2">
+                    <div class="form-group">
+                      <label for="">Altura</label>
+                      <input type="text" class="form-control" name="altura" id="altura" aria-describedby="helpId" placeholder="">
+                      <small id="helpId" class="form-text text-muted">(ex: 1.70)</small>
+                        
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-2">
+                    
+                        <div class="form-group">
+                          <label for="">Peso</label>
+                          <input type="text" class="form-control" name="" id="peso" aria-describedby="helpId" placeholder="">
+                          <small id="helpId" class="form-text text-muted">(ex: 80)</small>
+                            
+                        </div>
+
+                </div>
+                
+            </div>
+            
+        <div class="row">
+
+            <div class="col-12 col-xl-2">
+                <input name="calcular" id="btn" class="btn btn-primary" type="button" value="Calcular" onclick="imc()">
+            </div>
+            <br> 
+            <div class="col-12 col-xl-2">
+                <input name="calcular" id="btn" class="btn btn-primary" type="button" value="Limpar" onclick="clean()">
+            </div>
+        </div>
+     
+        <div class="d-none d-sm-block">
+        <div id="DivIMC">
+
+            <p>Veja a interprestação do seu IMC</p>
+            <h5 id="interIMC">
+            </h5>
+           
+              
+                  
+                  <table id="tabela" class="table">
+                   
+                      <tr id="linha">
+                        <th scope="col">IMC</th>
+                        <th scope="col">Classificação</th>
+                        <th scope="col">Obesidade(Grau)</th>
+                      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="tr1">
+                       
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                      </tr>
+                      <tr id="tr2">
+                     
+                        <td>ENTRE 18,5 E 24,9	</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                      </tr>
+                      <tr id="tr3">
+                     
+                        <td>ENTRE 25,0 E 29,9	</td>
+                        <td>SOBREPESO	</td>
+                        <td>I</td>
+                      </tr>
+
+                      <tr id="tr4">
+                     
+                        <td>ENTRE 30,0 E 39,9	</td>
+                        <td>OBESIDADE	</td>
+                        <td>II</td>
+                      </tr>
+
+                      <tr id="tr5">
+                     
+                        <td>MAIOR QUE 40,0	</td>
+                        <td>OBESIDADE GRAVE	</td>
+                        <td>III</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            
+                
+            </div>
+            </div>
+
+            <div id="DiVresultado">
+                <div>
+            O SEU IMC É: <h5 id="resultado"></h5>
+    
+        </div>  
+    
+            </div>
+
+        
+            
+        </div>
+
+        <div id="rodape">
+
+            Criado por Fernando Stadler - 2020
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

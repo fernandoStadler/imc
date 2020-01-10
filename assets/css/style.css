@@ -1,0 +1,55 @@
+#topo{
+    background-color: blueviolet;
+    color: white;
+    font-family:sans-serif;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+}
+
+#conteudo{
+
+    margin-top: 20px;
+}
+
+#btn{
+    margin-bottom: 10px;
+    width: 195px;
+}
+
+#DivIMC{
+    background-color: blueviolet;
+    color: white;
+    font-family:sans-serif;
+    text-align: center;
+    width: 600px;
+    
+}
+
+#tabela{
+    background-color: rgb(255, 255, 255);
+ 
+    border: solid 1px rgb(224, 224, 224);
+    
+}
+#DiVresultado{
+    background-color: blueviolet;
+    color: white;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#rodape{
+
+    background-color: blueviolet;
+    color: white;
+    font-family:sans-serif;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+    margin-top: 80px;
+
+
+}
