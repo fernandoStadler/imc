@@ -2,11 +2,15 @@
 <html lang="pt-br">
   <head>
 
+    <meta name="author" content="Fernando Stadler">
+      <meta name="description" content="Calcular IMC - Indice de massa corporal">
+      <meta name="keywords" content="IMC, Indice de massa corporal, Dieta, Calculadora IMCs">
+
+
    
     <title>Cálculo IMC</title>
 
     <!--Icon-->
-
     <link rel="icon" href="assets/img/icon.png" />
 
     <!-- Required meta tags -->
@@ -33,7 +37,7 @@
   </script>
 
 </head>
-  <body>
+  <body onload="validar()" oninput="validar()">
     <div id="topo"><p>
         Cálculo IMC
     </p></div>
@@ -47,7 +51,7 @@
                 <div class="col-12 col-xl-2">
                     <div class="form-group">
                       <label for="">Altura</label>
-                      <input type="text" class="form-control" name="altura" id="altura" aria-describedby="helpId" placeholder="">
+                      <input type="text" class="form-control" name="altura" id="altura" aria-describedby="helpId" placeholder=""  required="required" >
                       <small id="helpId" class="form-text text-muted">(ex: 1.70)</small>
                         
                     </div>
@@ -57,7 +61,7 @@
                     
                         <div class="form-group">
                           <label for="">Peso</label>
-                          <input type="text" class="form-control" name="" id="peso" aria-describedby="helpId" placeholder="">
+                          <input type="text" class="form-control" name="" id="peso" aria-describedby="helpId" placeholder=""  required="required" >
                           <small id="helpId" class="form-text text-muted">(ex: 80)</small>
                             
                         </div>
@@ -73,7 +77,7 @@
             </div>
             <br> 
             <div class="col-12 col-xl-2">
-                <input name="calcular" id="btn" class="btn btn-primary" type="button" value="Limpar" onclick="clean()">
+                <input name="peso" id="btn" class="btn btn-primary" type="button" value="Limpar" onclick="clean()">
             </div>
         </div>
      

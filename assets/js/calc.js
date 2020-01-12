@@ -183,8 +183,47 @@ rClassific.style.color ='black';
 rOb.textContent = 'Obesidade(Grau): ';
 rOb.style.backgroundColor = 'white';
 rOb.style.color = 'black';
+history.go(0)
 
 
 
 }
 
+function validar(){
+
+
+   var altura = document.getElementById('altura').value;
+   var peso = document.getElementById('peso').value;
+   
+
+
+   if(document.getElementById('altura').value=="" ){
+
+    document.getElementById("btn").disabled = true;
+
+    
+   }
+
+   if(document.getElementById('peso').value==""){
+    document.getElementById("btn").disabled = true;
+
+   }
+
+
+   else{
+
+
+    document.getElementById("btn").disabled = false;
+
+
+   }
+
+   
+    
+
+
+
+
+
+
+}
